@@ -1,0 +1,16 @@
+In "data_collector.py" file a piece of code that is provided to collect real estate data from "www.sahibinden.com". The code iterates over
+the house advertisements for a given city until desired number of data is collected. The code handles various for each attribute. For 
+example number of floors in a building can be an integer or a string "30 ve üzeri" if there are 30 or more floors. But still some 
+unexpected data may occur. In such cases code throws an exception message "Unexpected data occurred!". Also if the number of images in 
+the advertisement is less than desired the code discards the current advertisement and its data and handles a new house advertisement.
+
+Running code requires the city that you want to collect the data from, how many data will be collected, how many image data will be 
+collected for each house and the folder path where the collected data will be saved in your computer. Attribute data is saved as a numpy
+array in a ".npy" file and images are saved with ".jpg" extension. 
+Requirements to run the code:
+
+1- Selenium, requests, and numpy packages must be installed before.
+2- Chrome Webdriver must be downloaded and added to to environment variables. You can see the page below for Chrome Webdriver;
+  https://sites.google.com/a/chromium.org/chromedriver/downloads
+
+Then you can run the code.
