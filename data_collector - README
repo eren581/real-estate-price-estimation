@@ -1,0 +1,8 @@
+Running code requires the city that you want to collect the data from, how many data will be collected, how many image data will be 
+collected for each house and the folder path where the collected data will be saved in your computer. Attribute data is saved as a numpy
+array in a ".npy" file and images are saved with ".jpg" extension. Requirements to run the code:
+
+1- Selenium, requests, and numpy packages must be installed before.
+2- Chrome Webdriver must be downloaded and added to to environment variables.
+
+Then you can run the code.
