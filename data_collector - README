@@ -1,4 +1,4 @@
-In "data_collector.py" file a piece of code is provided to collect real estate data from "www.sahibinden.com". The code iterates over
+In "data_collector.py" file, a piece of code is provided to collect real estate data from "www.sahibinden.com". The code iterates over
 the house advertisements for a given city until desired number of data is collected. The code handles various for each attribute. For 
 example number of floors in a building can be an integer or a string "30 ve üzeri" if there are 30 or more floors. But still some 
 unexpected data may occur. In such cases code throws an exception message "Unexpected data occurred!". Also if the number of images in 
