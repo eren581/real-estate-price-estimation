@@ -31,133 +31,133 @@ def number_of_room(str_number_of_room):
         return number_of_rooms
 
 
-def building_age(str_building_age):
-    age = [0, 0, 0, 0, 0, 0, 0]
-    if str_building_age == "5-10 arası":
-        age[0] = 1
-        return age
-    elif str_building_age == "11-15 arası":
-        age[1] = 1
-        return age
-    elif str_building_age == "16-20 arası":
-        age[2] = 1
-        return age
-    elif str_building_age == "21-25 arası":
-        age[3] = 1
-        return age
-    elif str_building_age == "26-30 arası":
-        age[4] = 1
-        return age
-    elif str_building_age == "31 ve üzeri":
-        age[5] = 1
-        return age
-    else:
-        age[6] = int(str_building_age)
-        return age
+# def building_age(str_building_age):
+#     age = [0, 0, 0, 0, 0, 0, 0]
+#     if str_building_age == "5-10 arası":
+#         age[0] = 1
+#         return age
+#     elif str_building_age == "11-15 arası":
+#         age[1] = 1
+#         return age
+#     elif str_building_age == "16-20 arası":
+#         age[2] = 1
+#         return age
+#     elif str_building_age == "21-25 arası":
+#         age[3] = 1
+#         return age
+#     elif str_building_age == "26-30 arası":
+#         age[4] = 1
+#         return age
+#     elif str_building_age == "31 ve üzeri":
+#         age[5] = 1
+#         return age
+#     else:
+#         age[6] = int(str_building_age)
+#         return age
 
 
-def building_floor(str_building_floor):
-    floor_of_the_building = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    if str_building_floor == "Kot 4":
-        floor_of_the_building[0] = 1
-        return floor_of_the_building
-    elif str_building_floor == "Kot 3":
-        floor_of_the_building[1] = 1
-        return floor_of_the_building
-    elif str_building_floor == "Kot 2":
-        floor_of_the_building[2] = 1
-        return floor_of_the_building
-    elif str_building_floor == "Kot 1":
-        floor_of_the_building[3] = 1
-        return floor_of_the_building
-    elif str_building_floor == "Bodrum Kat":
-        floor_of_the_building[4] = 1
-        return floor_of_the_building
-    elif str_building_floor == "Zemin Kat":
-        floor_of_the_building[5] = 1
-        return floor_of_the_building
-    elif str_building_floor == "Bahçe Katı":
-        floor_of_the_building[6] = 1
-        return floor_of_the_building
-    elif str_building_floor == "Giriş Katı":
-        floor_of_the_building[7] = 1
-        return floor_of_the_building
-    elif str_building_floor == "Yüksek Giriş":
-        floor_of_the_building[8] = 1
-        return floor_of_the_building
-    elif str_building_floor == "Müstakil":
-        floor_of_the_building[9] = 1
-        return floor_of_the_building
-    elif str_building_floor == "Villa Tipi":
-        floor_of_the_building[10] = 1
-        return floor_of_the_building
-    elif str_building_floor == "Çatı Katı":
-        floor_of_the_building[11] = 1
-        return floor_of_the_building
-    elif str_building_floor == "30 ve üzeri":
-        floor_of_the_building[12] = 1
-        return floor_of_the_building
-    else:
-        floor_of_the_building[13] = int(str_building_floor)
-        return floor_of_the_building
+# def building_floor(str_building_floor):
+#     floor_of_the_building = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+#     if str_building_floor == "Kot 4":
+#         floor_of_the_building[0] = 1
+#         return floor_of_the_building
+#     elif str_building_floor == "Kot 3":
+#         floor_of_the_building[1] = 1
+#         return floor_of_the_building
+#     elif str_building_floor == "Kot 2":
+#         floor_of_the_building[2] = 1
+#         return floor_of_the_building
+#     elif str_building_floor == "Kot 1":
+#         floor_of_the_building[3] = 1
+#         return floor_of_the_building
+#     elif str_building_floor == "Bodrum Kat":
+#         floor_of_the_building[4] = 1
+#         return floor_of_the_building
+#     elif str_building_floor == "Zemin Kat":
+#         floor_of_the_building[5] = 1
+#         return floor_of_the_building
+#     elif str_building_floor == "Bahçe Katı":
+#         floor_of_the_building[6] = 1
+#         return floor_of_the_building
+#     elif str_building_floor == "Giriş Katı":
+#         floor_of_the_building[7] = 1
+#         return floor_of_the_building
+#     elif str_building_floor == "Yüksek Giriş":
+#         floor_of_the_building[8] = 1
+#         return floor_of_the_building
+#     elif str_building_floor == "Müstakil":
+#         floor_of_the_building[9] = 1
+#         return floor_of_the_building
+#     elif str_building_floor == "Villa Tipi":
+#         floor_of_the_building[10] = 1
+#         return floor_of_the_building
+#     elif str_building_floor == "Çatı Katı":
+#         floor_of_the_building[11] = 1
+#         return floor_of_the_building
+#     elif str_building_floor == "30 ve üzeri":
+#         floor_of_the_building[12] = 1
+#         return floor_of_the_building
+#     else:
+#         floor_of_the_building[13] = int(str_building_floor)
+#         return floor_of_the_building
 
 
-def total_floor(str_total_floor):
-    total_floor_in_building = [0,0]
-    if str_total_floor == "30 ve üzeri":
-        total_floor_in_building[0] = 1
-        return total_floor_in_building
-    else:
-        total_floor_in_building[1] = int(str_total_floor)
-        return total_floor_in_building
+# def total_floor(str_total_floor):
+#     total_floor_in_building = [0,0]
+#     if str_total_floor == "30 ve üzeri":
+#         total_floor_in_building[0] = 1
+#         return total_floor_in_building
+#     else:
+#         total_floor_in_building[1] = int(str_total_floor)
+#         return total_floor_in_building
 
 
-def heating_type(str_heating_type):
-    heating_types = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    if str_heating_type == "Yok":
-        return heating_types
-    elif str_heating_type == "Soba":
-        heating_types[0] = 1
-        return heating_types
-    elif str_heating_type == "Doğalgaz Sobası":
-        heating_types[1] = 1
-        return heating_types
-    elif str_heating_type == "Kat Kaloriferi":
-        heating_types[2] = 1
-        return heating_types
-    elif str_heating_type == "Merkezi":
-        heating_types[3] = 1
-        return heating_types
-    elif str_heating_type == "Merkezi (Pay Ölçer)":
-        heating_types[4] = 1
-        return heating_types
-    elif str_heating_type == "Doğalgaz (Kombi)":
-        heating_types[5] = 1
-        return heating_types
-    elif str_heating_type == "Yerden Isıtma":
-        heating_types[6] = 1
-        return heating_types
-    elif str_heating_type == "Klima":
-        heating_types[7] = 1
-        return heating_types
-    elif str_heating_type == "Fancoil Ünitesi":
-        heating_types[8] = 1
-        return heating_types
-    elif str_heating_type == "Güneş Enerjisi":
-        heating_types[9] = 1
-        return heating_types
-    elif str_heating_type == "Jeotermal":
-        heating_types[10] = 1
-        return heating_types
-    elif str_heating_type == "Şömine":
-        heating_types[11] = 1
-        return heating_types
-    elif str_heating_type == "VRV":
-        heating_types[12] = 1
-        return heating_types
-    elif str_heating_type == "Isı Pompası":
-        heating_types[13] = 1
-        return heating_types
+# def heating_type(str_heating_type):
+#     heating_types = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+#     if str_heating_type == "Yok":
+#         return heating_types
+#     elif str_heating_type == "Soba":
+#         heating_types[0] = 1
+#         return heating_types
+#     elif str_heating_type == "Doğalgaz Sobası":
+#         heating_types[1] = 1
+#         return heating_types
+#     elif str_heating_type == "Kat Kaloriferi":
+#         heating_types[2] = 1
+#         return heating_types
+#     elif str_heating_type == "Merkezi":
+#         heating_types[3] = 1
+#         return heating_types
+#     elif str_heating_type == "Merkezi (Pay Ölçer)":
+#         heating_types[4] = 1
+#         return heating_types
+#     elif str_heating_type == "Doğalgaz (Kombi)":
+#         heating_types[5] = 1
+#         return heating_types
+#     elif str_heating_type == "Yerden Isıtma":
+#         heating_types[6] = 1
+#         return heating_types
+#     elif str_heating_type == "Klima":
+#         heating_types[7] = 1
+#         return heating_types
+#     elif str_heating_type == "Fancoil Ünitesi":
+#         heating_types[8] = 1
+#         return heating_types
+#     elif str_heating_type == "Güneş Enerjisi":
+#         heating_types[9] = 1
+#         return heating_types
+#     elif str_heating_type == "Jeotermal":
+#         heating_types[10] = 1
+#         return heating_types
+#     elif str_heating_type == "Şömine":
+#         heating_types[11] = 1
+#         return heating_types
+#     elif str_heating_type == "VRV":
+#         heating_types[12] = 1
+#         return heating_types
+#     elif str_heating_type == "Isı Pompası":
+#         heating_types[13] = 1
+#         return heating_types
 
 
 def meter_square_to_int(str_meter_square):
@@ -226,18 +226,23 @@ while current_data_count < int(number_of_data):
             # Total number of rooms in the house
             number_of_room_element = info_list[4].find_element_by_tag_name("span").text
             number_of_rooms = number_of_room(number_of_room_element.strip(" "))
+            #number_of_rooms = number_of_room(number_of_room_element.strip(" "))
 
             # Age of the building
-            age = building_age(info_list[5].find_element_by_tag_name("span").text.strip(" "))
+            info_list[5].find_element_by_tag_name("span").text.strip(" ")
+            #age = building_age(info_list[5].find_element_by_tag_name("span").text.strip(" "))
 
             # The floor of the apartment
-            apartment_floor = building_floor(info_list[6].find_element_by_tag_name("span").text.strip(" "))
+            apartment_floor = info_list[6].find_element_by_tag_name("span").text.strip(" ")
+            #apartment_floor = building_floor(info_list[6].find_element_by_tag_name("span").text.strip(" "))
 
             # Total number of floors in the building
-            number_of_floors_in_building = total_floor(info_list[7].find_element_by_tag_name("span").text.strip(" "))
+            number_of_floors_in_building = int(info_list[7].find_element_by_tag_name("span").text.strip(" "))
+            #number_of_floors_in_building = total_floor(info_list[7].find_element_by_tag_name("span").text.strip(" "))
 
             # Heating type of the building
-            heating_type_of_building = heating_type(info_list[8].find_element_by_tag_name("span").text.strip(" "))
+            heating_type_of_building = info_list[8].find_element_by_tag_name("span").text.strip(" ")
+            #heating_type_of_building = heating_type(info_list[8].find_element_by_tag_name("span").text.strip(" "))
 
             # Total number of bathrooms in the house
             number_of_bathrooms = int(info_list[9].find_element_by_tag_name("span").text)
@@ -308,11 +313,11 @@ while current_data_count < int(number_of_data):
             inp_array.append(city)
             inp_array.append(district)
             inp_array.append(size)
-            inp_array.extend(number_of_rooms)
-            inp_array.extend(age)
-            inp_array.extend(apartment_floor)
-            inp_array.extend(number_of_floors_in_building)
-            inp_array.extend(heating_type_of_building)
+            inp_array.append(number_of_rooms)
+            inp_array.append(age)
+            inp_array.append(apartment_floor)
+            inp_array.append(number_of_floors_in_building)
+            inp_array.append(heating_type_of_building)
             inp_array.append(number_of_bathrooms)
             inp_array.append(has_balcony)
             inp_array.append(with_furniture)
