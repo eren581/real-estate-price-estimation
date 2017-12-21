@@ -155,10 +155,10 @@ def collect_data(city_page, town, total_data_count, number_of_img):
 
     current_data_count = 0
     i = 0
-    while current_data_count < number_of_results and current_data_count < int(total_data_count):
+    while i<number_of_results and current_data_count < number_of_results and current_data_count < int(total_data_count):
         print("Starting to parse data from page!")
         j = 0
-        while j in range(20) and current_data_count<number_of_results and current_data_count<int(total_data_count):
+        while j in range(len(search_results)) and current_data_count<number_of_results and current_data_count<int(total_data_count):
             advertisement_url = search_results[j].find_element_by_class_name(" classifiedTitle").get_attribute("href")
             web_driver.get(advertisement_url)
             try:
@@ -326,7 +326,7 @@ def collect_data(city_page, town, total_data_count, number_of_img):
                     #     image_file = open(folder_path + "/" + str(len(all_data)) + "_" + str(current_img_count + 1) + ".jpg", "wb")
                     #     image_file.write(img.content)
                     #     current_img_count += 1
-                    #all_data.append(inp_array)
+                    # all_data.append(inp_array)
                     current_data_count += 1
                     advertisement_ids.append(advertisement_id)
                     print("Data is added!")
@@ -339,7 +339,6 @@ def collect_data(city_page, town, total_data_count, number_of_img):
             j += 1
         i += 20
         print("End of page!")
-
 
 towns_file = open(towns_path, "r")
 for line in towns_file:
