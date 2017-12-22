@@ -155,7 +155,8 @@ def collect_data(city_page, town, total_data_count, number_of_img):
     current_data_count = 0
     i = 0
     while i<number_of_results and current_data_count < number_of_results and current_data_count < int(total_data_count):
-        web_driver.get("https://www.sahibinden.com/satilik/" + city_page.lower() + "-" + town.lower() + "?pagingOffset=" + str(i)
+        web_driver.get(
+            "https://www.sahibinden.com/satilik/" + city_page.lower() + "-" + town.lower() + "?pagingOffset=" + str(i))
         search_results = web_driver.find_elements_by_class_name("searchResultsTitleValue ")
         print("Starting to parse data from page!")
         j = 0
