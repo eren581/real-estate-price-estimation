@@ -328,7 +328,8 @@ def collect_data(city_page, town, total_data_count, number_of_img):
                     #     image_file = open(folder_path + "/" + str(len(all_data)) + "_" + str(current_img_count + 1) + ".jpg", "wb")
                     #     image_file.write(img.content)
                     #     current_img_count += 1
-                    # all_data.append(inp_array)
+                    
+                    all_data.append(inp_array)
                     current_data_count += 1
                     advertisement_ids.append(advertisement_id)
                     print("Data is added!")
